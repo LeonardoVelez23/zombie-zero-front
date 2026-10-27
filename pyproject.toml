@@ -1,0 +1,13 @@
+[project]
+name = "zombie-zero"
+version = "0.1.0"
+description = "Simulador de la plaga zombie en Manta y recomendador de estrategias de contención"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
